@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Agnese Svjatska](https://up.htmlacademy.ru/adaptive/14/user/295733).
-* Наставник: `Неизвестно`.
+* Наставник: Виктория Коваленко.
 
 ---
 
