@@ -5,25 +5,23 @@
     <title>HTML Academy: Седона - Форма отзыва</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
-  
   <body>
     <header class="header">
-	  <nav class="header__navigation">
-	    <a class="header__logo"><img src="" alt="City of Sedona" height="" width=""></a>
-		<ul class="header__navigation-list">
-		  <li class="header__navigation-item"><a class="header__navigation-link" href="#" title="Главная">Главная</a></li>
-		  <li class="header__navigation-item"><a class="header__navigation-link" href="#" title="Фото и видео">Фото и видео</a></li>
-		  <li class="header__navigation-item"><a class="header__navigation-link" title="Форма отзыва">Форма отзыва</a></li>
-		  <li class="header__navigation-item"><a class="header__navigation-link" href="#" title="HTML Academy">HTML Academy</a></li>
+      <nav class="header__navigation">
+        <a class="header__logo"><img src="" alt="City of Sedona" height="" width=""></a>
+        <ul class="header__navigation-list">
+          <li class="header__navigation-item"><a class="header__navigation-link" href="#" title="Главная">Главная</a></li>
+          <li class="header__navigation-item"><a class="header__navigation-link" href="#" title="Фото и видео">Фото и видео</a></li>
+          <li class="header__navigation-item"><a class="header__navigation-link" title="Форма отзыва">Форма отзыва</a></li>
+          <li class="header__navigation-item"><a class="header__navigation-link" href="#" title="HTML Academy">HTML Academy</a></li>
         </ul>
       </nav>
     </header>
-	
     <main>
       <h1 class="page-title visually-hidden">Форма отзыва о Седоне</h1>
       <section class="feedback">
         <h2 class="feedback__section-title">Оставьте свой отзыв</h2>
-        <p class="feedback__section-comment">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p> 
+        <p class="feedback__section-comment">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         <form action="#" method="post">
           <div class="feedback__block">
             <legend class="feedback__block-title">Представьтесь:</legend>
@@ -39,7 +37,7 @@
               <label for="patronymic-field" class="feedback__label--mandatory">Отчество:</label>
               <input type="text" class="feedback__text-input" name="patronymic" id="patronymic-field" placeholder="Александрович">
             </div>
-		  </div>	
+          </div>
           <div class="feedback__block">
             <legend class="feedback__block-title">Контактная информация:</legend>
             <div class="feedback__input-wrapper">
@@ -55,15 +53,15 @@
             <legend class="feedback__block-title">Ваше общее впечатление:</legend>
             <div class="feedback__input-wrapper">
               <ul class="feedback__rating-list">
-                <li class="feedback__rating-field">																	
+                <li class="feedback__rating-field">
                   <input type="radio" class="visually-hidden feedback__input-radio" name="rating" id="rating-positive" value="positive" checked>
                   <label for="rating-positive" class="feedback__label--radio">Скорее положительное</label>
                 </li>
-                <li class="feedback__rating-field">																	
+                <li class="feedback__rating-field">
                   <input type="radio" class="visually-hidden feedback__input-radio" name="rating" id="rating-negative" value="negative">
                   <label for="rating-negative" class="feedback__label--radio">Скорее отрицательное</label>
                 </li>
-                <li class="feedback__rating-field">																	
+                <li class="feedback__rating-field">
                   <input type="radio" class="visually-hidden feedback__input-radio" name="rating" id="rating-none" value="none">
                   <label for="rating-none" class="feedback__label--radio">Затрудняюсь ответить</label>
                 </li>
@@ -71,22 +69,22 @@
             </div>
           </div>
           <div class="feedback__block">
-		    <legend class="feedback__block-title">Посещенные достопримечательности:</legend>
+            <legend class="feedback__block-title">Посещенные достопримечательности:</legend>
             <div class="feedback__input-wrapper">
               <ul class="feedback__attractions-list">
-                <li class="feedback__attractions-field">																	
+                <li class="feedback__attractions-field">
                   <input type="checkbox" class="visually-hidden feedback__input-checkbox" name="attractions" id="attractions-devils-bridge" value="devils-bridge" checked>
                   <label for="attractions-devils-bridge" class="feedback__label--checkbox">Мост Дьявола</label>
                 </li>
-                <li class="feedback__attractions-field">																	
+                <li class="feedback__attractions-field">
                   <input type="checkbox" class="visually-hidden feedback__input-checkbox" name="attractions" id="attractions-bell-mountain" value="bell-mountain" checked>
                   <label for="attractions-bell-mountain" class="feedback__label--checkbox">Гора-Колокол</label>
                 </li>
-                <li class="feedback__attractions-field">																	
+                <li class="feedback__attractions-field">
                   <input type="checkbox" class="visually-hidden feedback__input-checkbox" name="attractions" id="attractions-slide-park" value="slide-park" checked>
                   <label for="attractions-slide-park" class="feedback__label--checkbox">Слайд-парк</label>
                 </li>
-                <li class="feedback__attractions-field">																	
+                <li class="feedback__attractions-field">
                   <input type="checkbox" class="visually-hidden feedback__input-checkbox" name="attractions" id="attractions-red-rocks" value="red-rocks">
                   <label for="attractions-red-rocks" class="feedback__label--checkbox">Красные скалы</label>
                 </li>
@@ -96,7 +94,7 @@
           <div class="feedback__block">
             <legend class="feedback__block-title">Опишите свои эмоции:</legend>
             <div class="feedback__input-wrapper">
-              <textarea class="feedback__textarea" name="message" id="message-field" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>      
+              <textarea class="feedback__textarea" name="message" id="message-field" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
             </div>
           </div>
           <div class="feedback__block">
@@ -105,7 +103,6 @@
         </form>
       </section>
     </main>
-	
     <footer>
       <b class="footer__sedona-hashtag">#visitsedona</b>
       <ul class="footer__social-list">
@@ -115,6 +112,5 @@
       </ul>
       <p class="footer__copyright">Разработано <a class="footer__copyright-icon" href="http://www.htmlacademy.ru" title="HTMLAcademy">HTMLAcademy.ru</a></p>
     </footer>
-
   </body>
 </html>
