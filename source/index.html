@@ -7,17 +7,26 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header__navigation">
-        <a class="header__logo"><img src="" alt="City of Sedona" height="83" width="102"></a>
-        <ul class="header__navigation-list">
-          <li class="header__navigation-item"><a class="header__navigation-link" title="Главная">Главная</a></li>
-          <li class="header__navigation-item"><a class="header__navigation-link" href="#" title="Фото и видео">Фото и видео</a></li>
-          <li class="header__navigation-item"><a class="header__navigation-link" href="#" title="Форма отзыва">Форма отзыва</a></li>
-          <li class="header__navigation-item"><a class="header__navigation-link" href="#" title="HTML Academy">HTML Academy</a></li>
+      <nav class="main-navigation">
+        <a class="main-navigation__logo"><img src="../img/logo-sedona-mobile.svg" alt="Город Седона" height="84" width="102"></a>
+        <ul class="main-navigation__navigation-list">
+          <li class="main-navigation__navigation-item"><a class="main-navigation__navigation-link" title="Главная">Главная</a></li>
+          <li class="main-navigation__navigation-item"><a class="main-navigation__navigation-link" href="gallery.html" title="Фото и видео">Фото и видео</a></li>
+          <li class="main-navigation__navigation-item"><a class="main-navigation__navigation-link" href="feedback-form.html" title="Форма отзыва">Форма отзыва</a></li>
+          <li class="main-navigation__navigation-item"><a class="main-navigation__navigation-link" href="http://www.htmlacademy.ru" title="HTML Academy">HTML Academy</a></li>
         </ul>
       </nav>
     </header>
     <main>
+      <section class="image-promo">
+        <img class="image-promo__photo" src="../img/bg-back-mobile@1x.jpg" alt="Добро пожаловать в Седону!" height="389" width="768">
+        <div class="image_promo__slogan">
+          <span class="image_promo__slogan--line-1">Welcome</span><br>
+          <span class="image_promo__slogan--line-2">- to the gorgeous -</span><br>
+          <span class="image_promo__slogan--line-3">Sedona</span><br>
+          <span class="image_promo__slogan--line-4">"Because the Grand Canyon sucks!"</span>
+        </div>
+      </section>
       <section class="advantages">
         <h2 class="section-title visually-hidden">Преимущества туристической поездки в Седону</h2>
         <b class="advantages__section-slogan">Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
@@ -26,6 +35,7 @@
           <li class="advantages__advantage-item">Настоящий городок
             <p class="advantages__item-number">- №1 -</p>
             <p class="advantages__item-description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            <img class="advantages__features-image" src="../img/main-city-mobile@1x.jpg" alt="Вид города Седоны" height="260" width="320">
             <ul class="advantages__features-list">
               <li class="advantages__feature-item">Жилье
                 <p class="advantages__feature-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -61,10 +71,13 @@
           <b class="hotel-promotion__emphasis">Заинтересовались?</b>
           <p class="hotel-promotion__comment">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="hotel-promotion__button button" href="#" title="Найти гостиницу">Найти гостиницу</a>
-          <div class="map">
-            <h3 class="section-title visually-hidden">Как найти Седону</h3>
-            <img class="map__image" src="" alt="Карта с местонахождением Седоны" width="" height="">
-          </div>
+      </section>
+      <section class="map">
+        <h2 class="section-title visually-hidden">Как найти Седону</h2>
+        <div class="map__map-wrapper">
+          <img class="map__map-image" src="../img/bg-map-mobile@1x.jpg" alt="Карта с местонахождением Седоны" width="320" height="350">
+          <img class="map__map-marker" src="../img/icon-map-marker.svg" width="" height="">
+        </div>
       </section>
     </main>
     <footer class="footer">
