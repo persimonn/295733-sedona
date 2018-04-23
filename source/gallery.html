@@ -7,67 +7,81 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header__navigation">
-        <a class="header__logo"><img src="" alt="City of Sedona" height="" width=""></a>
-        <ul class="header__navigation-list">
-          <li class="header__navigation-item"><a class="header__navigation-link" href="#" title="Главная">Главная</a></li>
-          <li class="header__navigation-item"><a class="header__navigation-link" title="Фото и видео">Фото и видео</a></li>
-          <li class="header__navigation-item"><a class="header__navigation-link" href="#" title="Форма отзыва">Форма отзыва</a></li>
-          <li class="header__navigation-item"><a class="header__navigation-link" href="#" title="HTML Academy">HTML Academy</a></li>
+      <nav class="main-navigationn">
+        <a class="main-navigation__logo"><img src="../img/logo-sedona-mobile.svg" alt="Город Седона" height="84" width="102"></a>
+        <ul class="main-navigation__navigation-list">
+          <li class="main-navigation__navigation-item"><a class="main-navigation__navigation-link" href="index.html" title="Главная">Главная</a></li>
+          <li class="main-navigation__navigation-item"><a class="main-navigation__navigation-link" title="Фото и видео">Фото и видео</a></li>
+          <li class="main-navigation__navigation-item"><a class="main-navigation__navigation-link" href="feedback-form.html" title="Форма отзыва">Форма отзыва</a></li>
+          <li class="main-navigation__navigation-item"><a class="main-navigation__navigation-link" href="http://www.htmlacademy.ru" title="HTML Academy">HTML Academy</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <h1 class="page-title visually-hidden">Фото и видео галлерея Седоны</h1>
-      <section class="gallery">
-        <h2 class="gallery__section-title">Фото и видео</h2>
-        <p class="gallery__section-comment">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-        <figure class="gallery__gallery-item--photo">
-          <img class="gallery__item-image" src="" alt="" width="" height="">
-          <figcaption class="gallery__item-caption">
-            <b class="gallery__item-description">Неродные просторы</b>
-            <p class="gallery__item-author">Автор фото: Борис</p>
-            <div class="gallery__item-facebook-likes">1350</div>
+      <section class="intro">
+        <div class="intro__wrapper">
+          <img class="intro__photo" src="img/text-sedona.svg" alt="Добро пожаловать в Седону!" height="" width="320">
+        </div>
+      </section>
+      <section class="gallery-contents">
+        <h2 class="gallery-contents__section-title">Фото и видео</h2>
+        <p class="gallery-contents__section-comment">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <figure class="gallery-contents__gallery-item--photo">
+          <img class="gallery-contents__item-image" src="img/photo-sunset-mobile@1x.jpg" alt="" width="280" height="280">
+          <figcaption class="gallery-contents__item-caption">
+            <b class="gallery-contents__item-description">Неродные просторы</b>
+            <p class="gallery-contents__item-author">Автор фото: Борис</p>
+            <div class="gallery-contents__item-facebook-likes">1350</div>
           </figcaption>
         </figure>
-        <figure class="gallery__gallery-item--photo">
-          <img class="gallery__item-image" src="" alt="" width="" height="">
-          <figcaption class="gallery__item-caption">
-            <b class="gallery__item-description">Местная растительность</b>
-            <p class="gallery__item-author">Автор фото: Сергей</p>
-            <div class="gallery__item-facebook-likes">143</div>
+        <figure class="gallery-contents__gallery-item--photo">
+          <img class="gallery-contents__item-image" src="img/photo-cactus-mobile@1x.jpg" alt="" width="280" height="280">
+          <figcaption class="gallery-contents__item-caption">
+            <b class="gallery-contents__item-description">Местная растительность</b>
+            <p class="gallery-contents__item-author">Автор фото: Сергей</p>
+            <div class="gallery-contents__item-facebook-likes">143</div>
           </figcaption>
         </figure>
-        <figure class="gallery__gallery-item--photo">
-          <img class="gallery__item-image" src="" alt="" width="" height="">
-          <figcaption class="gallery__item-caption">
-            <b class="gallery__item-description">Дорога на север</b>
-            <p class="gallery__item-author">Автор фото: Петр</p>
-            <div class="gallery__item-facebook-likes">96</div>
+        <figure class="gallery-contents__gallery-item--photo">
+          <img class="gallery-contents__item-image" src="img/photo-roads-mobile@1x.jpg" alt="" width="280" height="280">
+          <figcaption class="gallery-contents__item-caption">
+            <b class="gallery-contents__item-description">Дорога на север</b>
+            <p class="gallery-contents__item-author">Автор фото: Петр</p>
+            <div class="gallery-contents__item-facebook-likes">96</div>
           </figcaption>
         </figure>
-        <figure class="gallery__gallery-item--photo">
-          <img class="gallery__item-image" src="" alt="" width="" height="">
-          <figcaption class="gallery__item-caption">
-            <b class="gallery__item-description">Мост Дьявола</b>
-            <p class="gallery__item-author">Автор фото: Антон</p>
-            <div class="gallery__item-facebook-likes">254</div>
+        <figure class="gallery-contents__gallery-item--photo">
+          <img class="gallery-contents__item-image" src="img/photo-bridge-mobile@1x.jpg" alt="" width="280" height="280">
+          <figcaption class="gallery-contents__item-caption">
+            <b class="gallery-contents__item-description">Мост Дьявола</b>
+            <p class="gallery-contents__item-author">Автор фото: Антон</p>
+            <div class="gallery-contents__item-facebook-likes">254</div>
           </figcaption>
         </figure>
-        <b class="gallery__comment-emphasis">Все еще сомневаетесь?</b>
-        <p class="gallery__section-comment">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <div class="gallery__gallery-item--video">
-          <iframe class="gallery__item-video" src="" height="" width=""></iframe>
+        <b class="gallery-contents__comment-emphasis">Все еще сомневаетесь?</b>
+        <p class="gallery-contents__section-comment">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <div class="gallery-contents__gallery-item--video">
+          <img class="gallery-contents__item-video" src="img/video-mobile@1x.jpg" alt="" width="320" height="201">
+          <div class="video-controls">
+            <form action="#" method="post">
+              <input class="video-controls__video-replay" type="image" src="img/icon-video-replay.svg" alt="Повторить">
+              <input class="video-controls__video-subtitles" type="image" src="img/icon-video-subtitles.svg" alt="Субтитры">
+              <input class="video-controls__video-fullscreen" type="image" src="img/icon-video-fullscreen.svg" alt="Развернуть">
+            </form>
+          </div>
         </div>
       </section>
     </main>
-    <footer>
-      <b class="footer__sedona-hashtag">#visitsedona</b>
-      <ul class="footer__social-list">
-        <li class="footer__social-item"><a class="footer__social-button social-button-twitter" href="#" title="Twitter">Twitter</a></li>
-        <li class="footer__social-item"><a class="footer__social-button social-button-facebook" href="#" title="Facebook">Facebook</a></li>
-        <li class="footer__social-item"><a class="footer__social-button social-button-youtube" href="#" title="YouTube">YouTube</a></li>
-      </ul>
+    <footer class="footer">
+      <div class="social__social-wrapper">
+        <b class="social__sedona-hashtag">#visitsedona</b>
+        <ul class="social__social-list">
+          <li class="social__social-item"><a class="social__social-button social__social-button--twitter" href="#" title="Twitter">Twitter</a></li>
+          <li class="social__social-item"><a class="social__social-button social__social-button--facebook" href="#" title="Facebook">Facebook</a></li>
+          <li class="social__social-item"><a class="social__social-button social__social-button--youtube" href="#" title="YouTube">YouTube</a></li>
+        </ul>
+      </div>
       <p class="footer__copyright">Разработано <a class="footer__copyright-icon" href="http://www.htmlacademy.ru" title="HTMLAcademy">HTMLAcademy.ru</a></p>
     </footer>
   </body>

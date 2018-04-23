@@ -1,0 +1,37 @@
+/*
+.main-navigation {
+
+}
+*/
+.main-navigation__logo {
+  display: block;
+}
+
+.main-navigation__navigation-list {
+  .list-style-reset();
+  background-color: @color-3;
+}
+
+.main-navigation__navigation-item {
+  border-width: 0;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-style: outset;
+
+  &:first-child {
+    border-top-width: 0;
+  }
+
+  &:last-child {
+    border-bottom-width: 0;
+  }
+}
+
+.main-navigation__navigation-link {
+  display: block;
+  .font-parameters(18px; 40px; bold);
+  text-align: center;
+  color: @color-2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
