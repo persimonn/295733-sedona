@@ -1,4 +1,4 @@
-.intro {
+.intro-index {
   width: @mobile-width;
   background-color: @color-2;
   background-image: url("../img/bg-intro-triangle-mobile.svg"),
@@ -6,37 +6,34 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 2px, center;
-  outline: 2px solid green;
+  outline: 4px solid green;
 }
 
-.intro__photo {
-  width: 232px;
+.intro-index__photo {
+  margin-top: 87px;
+  margin-bottom: 82px;
+  width: 280px;
   height: auto;
-  margin-top: 50px;
-  margin-bottom: 60px;
 }
 
 @media (min-width: @tablet-width) {
-
-  .intro {
+  .intro-index {
     width: @tablet-width;
   }
 
-  .intro__photo {
+  .intro-index__photo {
+    margin-top: 75px;
     width: 463px;
-    margin-top: 92px;
-    margin-bottom: 110px;
   }
 }
 
 @media (min-width: @desktop-width) {
-
-  .intro {
+  .intro-index {
     width: @desktop-width;
   }
 
-  .intro__photo {
-    margin-top: 101px;
-    margin-bottom: 114px;
+  .intro-index__photo {
+    margin-top: 75px;
+    width: 463px;
   }
 }

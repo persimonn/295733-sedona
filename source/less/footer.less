@@ -1,13 +1,15 @@
-/*
 .footer {
-
+  display: flex;
+  flex-direction: column;
+  width: @mobile-width;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  outline: 2px solid orange;
 }
-*/
+
 .footer__copyright {
   .font-parameters(14px; 26px; normal);
   margin: 0;
-  margin-top: 45px;
-  margin-bottom: 36px;
 }
 
 .footer__copyright-icon {
@@ -20,4 +22,28 @@
   background-position: 50% 50%;
   background-image: url("../img/htmlacademy.svg");
   background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: @tablet-width;
+    padding-top: 0;
+  }
+
+  .footer__copyright-wrapper {
+    width: 255px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer {
+    width: @desktop-width;
+  }
+
+  .footer__copyright-wrapper {
+    width: 400px;
+  }
 }
