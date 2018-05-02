@@ -1,5 +1,42 @@
-/*
 .header {
+  width: @mobile-width;
+  position: relative;
+  outline: 2px solid purple;
+}
+
+.header__logo-wrapper {
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 102;
+  height: 84;
+  z-index: 2;
+}
+
+.header__logo-link {
+  display: block;
+}
+/*
+.header__logo {
 
 }
 */
+
+@media (min-width: @tablet-width) {
+  .header {
+    width: @tablet-width;
+  }
+
+  .header__logo-wrapper {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header {
+    width: @desktop-width;
+  }
+}

@@ -1,17 +1,24 @@
 .hotel-promotion {
-  padding-top: 32px;
+  width: @mobile-width;
+  padding-top: 26px;
+  padding-bottom: 50px;
+  outline: 2px solid red;
 }
 
 .hotel-promotion__emphasis {
   display: block;
   .font-parameters(21px; 26px; bold);
-  margin-bottom: 25px;
+  margin-bottom: 22px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .hotel-promotion__comment {
   .font-parameters(14px; 24px; normal);
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .hotel-promotion__button {
@@ -23,5 +30,48 @@
   background-color: @color-3;
   padding-top: 16px;
   padding-bottom: 16px;
-  margin-bottom: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .hotel-promotion {
+    width: @tablet-width;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .hotel-promotion__emphasis {
+    .font-parameters(30px; 30px; bold);
+    margin-bottom: 28px;
+  }
+
+  .hotel-promotion__comment {
+    margin-bottom: 40px;
+    padding-right: 170px;
+    padding-left: 170px;
+  }
+
+  .hotel-promotion__button {
+    margin-right: 155px;
+    margin-left: 155px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hotel-promotion {
+    width: @desktop-width;
+    padding-bottom: 62px;
+  }
+
+  .hotel-promotion__comment {
+    margin-bottom: 48px;
+    padding-right: 375px;
+    padding-left: 375px;
+  }
+
+  .hotel-promotion__button {
+    margin-right: 372px;
+    margin-left: 372px;
+  }
 }

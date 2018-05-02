@@ -1,29 +1,40 @@
-/*
 .main-navigation {
-
+  position: relative;
+  padding-bottom: 58px;
+  width: @mobile-width;
+  outline: 2px solid brown;
 }
-*/
-.main-navigation__logo {
-  display: block;
+
+.main-navigation__control {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  border: none;
+  width: 23px;
+  height: 23px;
+  background: black;
+  font-size: 0;
 }
 
 .main-navigation__navigation-list {
+  display: flex;
+  flex-direction: column;
   .list-style-reset();
   background-color: @color-3;
 }
 
 .main-navigation__navigation-item {
-  border-width: 0;
-  border-top-width: 2px;
-  border-bottom-width: 2px;
-  border-style: outset;
+  border-right: none;
+  border-left: none;
+  border-top: 2px solid @color-7;
+  border-bottom: 2px solid @color-8;
 
   &:first-child {
-    border-top-width: 0;
+    border-top: none;
   }
 
   &:last-child {
-    border-bottom-width: 0;
+    border-bottom: none;
   }
 }
 
@@ -32,6 +43,70 @@
   .font-parameters(18px; 40px; bold);
   text-align: center;
   color: @color-2;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-navigation {
+    width: @tablet-width;
+    padding-bottom: 0;
+  }
+
+  .main-navigation__control {
+    display: none;
+  }
+
+  .main-navigation__navigation-list {
+    flex-direction: row;
+    background-color: @color-2;
+  }
+
+  .main-navigation__navigation-item {
+    width: 154px;
+    border: none;
+
+    &:nth-child(3) {
+      margin-left: auto;
+    }
+  }
+
+  .main-navigation__navigation-link {
+    .font-parameters(14px; 26px; bold);
+    color: @color-1;
+    padding-top: 15px;
+    padding-bottom: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-navigation {
+    width: @desktop-width;
+    padding-bottom: 0;
+  }
+
+  .main-navigation__control {
+    display: none;
+  }
+
+  .main-navigation__navigation-list {
+    flex-direction: row;
+    background-color: @color-2;
+  }
+
+  .main-navigation__navigation-item {
+    width: 238px;
+    border: none;
+
+    &:nth-child(3) {
+      margin-left: auto;
+    }
+  }
+
+  .main-navigation__navigation-link {
+    .font-parameters(14px; 26px; bold);
+    color: @color-1;
+    padding-top: 13px;
+    padding-bottom: 16px;
+  }
 }

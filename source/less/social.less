@@ -1,12 +1,6 @@
-/*.social_social-wrapper {
-
-}
-*/
-.social__sedona-hashtag {
-  display: block;
-  .font-parameters(21px; 26px; bold);
-  margin-top: 38px;
-  margin-bottom: 40px;
+.social__social-wrapper {
+  margin-top: 37px;
+  margin-bottom: 39px;
 }
 
 .social__social-list {
@@ -16,7 +10,7 @@
 .social__social-item {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 6px;
+  margin-right: 2px;
 
   &:last-child {
     margin-right: none;
@@ -42,5 +36,17 @@
 
   &--youtube {
     background-image: url("../img/icon-youtube.svg");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social__social-wrapper {
+    width: 255px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social__social-wrapper {
+    width: 400px;
   }
 }
