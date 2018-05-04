@@ -54,13 +54,36 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
 }
 
-:focus {
-  outline: 5px auto -webkit-focus-ring-color;
-}
-
 .container {
   width: @mobile-width;
   max-width: @desktop-width;
+  margin: 0 auto;
+}
+
+.button {
+  display: block;
+  .font-parameters(21px; 26px; bold);
+  .uppercase();
+  text-align: center;
+  vertical-align: middle;
+  color: @color-2;
+  background-color: @color-3;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  &:hover,
+  &:focus {
+    background-color: @color-3-1;
+  }
+
+  &:active {
+    color: @color-3-3;
+    background-color: @color-3-2;
+  }
+
+  &:disabled {
+    background-color: @color-5-1;
+  }
 }
 
 @media (min-width: @tablet-width) {
