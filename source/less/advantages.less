@@ -1,6 +1,7 @@
 .advantages {
   width: @mobile-width;
   padding-top: 39px;
+  background-color: @color-2;
 }
 
 .advantages__section-slogan {
@@ -283,15 +284,12 @@
     overflow: hidden;
   }
 
-  .advantages__features-image--city {
-    margin-top: -75px;
-    margin-bottom: -75px;
-    padding: 0;
-  }
-
-  .advantages__features-image--bridge {
-    margin-top: -75px;
-    margin-bottom: -75px;
-    padding: 0;
+  .advantages__features-image {
+    &--city,
+    &--bridge {
+      margin-top: -75px;
+      margin-bottom: -75px;
+      padding: 0;
+    }
   }
 }
