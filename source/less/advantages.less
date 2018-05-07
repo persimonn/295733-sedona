@@ -1,6 +1,7 @@
 .advantages {
   width: @mobile-width;
   padding-top: 39px;
+  background-color: @color-2;
 }
 
 .advantages__section-slogan {
@@ -36,7 +37,7 @@
   padding-right: 8px;
   padding-left: 8px;
 
-  &-1 {
+  &--authentic {
     color: @color-2;
     background-color: @color-3;
     background-image: url("../img/bg-triangle.svg");
@@ -47,16 +48,16 @@
     padding-bottom: 41px;
   }
 
-  &-2 {
+  &--devils-bridge {
     color: @color-2;
     background-color: @color-3;
     padding-top: 42px;
     padding-bottom: 40px;
   }
 
-  &-3,
-  &-4,
-  &-5 {
+  &--small,
+  &--beautiful,
+  &--untouristic {
     color: @color-1;
     background-color: @color-4;
     padding-top: 28px;
@@ -85,11 +86,6 @@
   padding-left: 20px;
 }
 
-.advantages__features-image--city {
-  height: 260px;
-  width: 320px;
-}
-
 .advantages__features-list {
   display: flex;
   flex-direction: column;
@@ -106,6 +102,7 @@
   padding-left: 70px;
   padding-right: 20px;
   padding-top: 31px;
+  background-color: @color-2;
 
   &:last-child {
     margin-bottom: 37px;
@@ -160,20 +157,20 @@
     padding-right: 23px;
     padding-left: 23px;
 
-    &-1 {
+    &--authentic {
       background-image: none;
       padding-top: 44px;
       padding-bottom: 44px;
     }
 
-    &-2 {
+    &--devils-bridge {
       order: 2;
       padding-bottom: 46px;
     }
 
-    &-3,
-    &-4,
-    &-5 {
+    &--small,
+    &--beautiful,
+    &--untouristic {
       padding-top: 45px;
       padding-bottom: 40px;
       padding-right: 30px;
@@ -198,15 +195,8 @@
     padding-left: 20px;
   }
 
-  .advantages__features-image--city {
-    height: 254px;
-    width: 500px;
-  }
-
   .advantages__features-image--bridge {
     order: 1;
-    height: 255px;
-    width: 500px;
   }
 
   .advantages__features-list {
@@ -251,19 +241,19 @@
     width: 400px;
     padding-bottom: 42px;
 
-    &-1 {
+    &--authentic {
       padding-top: 50px;
       padding-bottom: 60px;
     }
 
-    &-2 {
+    &--devils-bridge {
       padding-top: 52px;
       padding-bottom: 60px;
     }
 
-    &-3,
-    &-4,
-    &-5 {
+    &--small,
+    &--beautiful,
+    &--untouristic {
       padding-top: 45px;
       padding-bottom: 60px;
       padding-right: 30px;
@@ -288,5 +278,18 @@
     padding-left: 55px;
     padding-right: 55px;
     padding-bottom: 44px;
+  }
+
+  .advantages__advantage-item {
+    overflow: hidden;
+  }
+
+  .advantages__features-image {
+    &--city,
+    &--bridge {
+      margin-top: -75px;
+      margin-bottom: -75px;
+      padding: 0;
+    }
   }
 }

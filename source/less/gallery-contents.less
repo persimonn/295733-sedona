@@ -1,6 +1,7 @@
 .gallery-contents {
   width: @mobile-width;
   padding-bottom: 72px;
+  background-color: @color-2;
 }
 
 .gallery-contents__section-title {
@@ -31,16 +32,6 @@
   margin: 0;
   padding-top: 22px;
   padding-bottom: 19px;
-}
-
-.gallery-contents__item-image {
-  &-1,
-  &-2,
-  &-3,
-  &-4 {
-    width: 280px;
-    height: 280px;
-  }
 }
 
 .gallery-contents__item-caption {
@@ -90,11 +81,6 @@
   position: relative;
 }
 
-.gallery-contents__item-video {
-  width: 320px;
-  height: 201px;
-}
-
 @media (min-width: @tablet-width) {
   .gallery-contents {
     width: @tablet-width;
@@ -129,28 +115,14 @@
     padding-top: 0;
     padding-bottom: 0;
 
-    &-1 {
+    &--sunset {
       width: 648px;
     }
 
-    &-2,
-    &-3,
-    &-4 {
+    &--cactus,
+    &--roads,
+    &--bridge {
       width: 324px;
-    }
-  }
-
-  .gallery-contents__item-image {
-    &-1 {
-      width: 648px;
-      height: 400px;
-    }
-
-    &-2,
-    &-3,
-    &-4 {
-      width: 324px;
-      height: 267px;
     }
   }
 
@@ -189,11 +161,6 @@
     padding-right: 100px;
     padding-left: 100px;
   }
-
-  .gallery-contents__item-video {
-    width: 648px;
-    height: 502px;
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -220,28 +187,14 @@
     position: relative;
     margin-top: -6px;
 
-    &-1 {
+    &--sunset {
       width: 1200px;
     }
 
-    &-2,
-    &-3,
-    &-4 {
+    &--cactus,
+    &--roads,
+    &--bridge {
       width: 400px;
-    }
-  }
-
-  .gallery-contents__item-image {
-    &-1 {
-      width: 1200px;
-      height: 400px;
-    }
-
-    &-2,
-    &-3,
-    &-4 {
-      width: 400px;
-      height: 267px;
     }
   }
 
@@ -255,10 +208,5 @@
   .gallery-contents__comment {
     padding-right: 385px;
     padding-left: 385px;
-  }
-
-  .gallery-contents__item-video {
-    width: 800px;
-    height: 502px;
   }
 }

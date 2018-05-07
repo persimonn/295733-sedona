@@ -93,8 +93,33 @@ input[type="radio"].visually-hidden {
 }
 
 @media (min-width: @desktop-width) {
+  body {
+    background-color: @color-5;
+  }
+
   .container {
+    position: relative;
     width: @desktop-width;
     margin: 0 auto;
+
+    &::before {
+      box-shadow: -15px 0 15px -15px #bebbbb inset;
+      content: " ";
+      height: 100%;
+      left: -15px;
+      position: absolute;
+      top: 0;
+      width: 15px;
+    }
+
+    &::after {
+      box-shadow: 15px 0 15px -15px #bebbbb inset;
+      content: " ";
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: -15px;
+      width: 15px;
+    }
   }
 }
